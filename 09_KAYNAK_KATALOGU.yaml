@@ -5,7 +5,7 @@
 catalog_version: "0.1"
 institution: "İzmir Büyükşehir Belediyesi"
 pilot_unit: "Sosyal Hizmetler Dairesi Başkanlığı"
-last_reviewed: "2026-09-09"
+last_reviewed: "2026-09-10"
 
 sources:
   - id: KIK-4734
@@ -162,3 +162,29 @@ sources:
     official_url: null
     status: kapsam_belirlenecek
     notes: "ISO 27001, ISO 25010 ve ISO 29148 yalnızca bağlayıcı kaynak veya sözleşme kriteri olarak açıkça belirlenirse uygulanacak."
+
+test_documents:
+  - id: TEST-ASEVI-CEKMEKOY-2025-2351397
+    title: "2026 Yılı Aşevi Mutfağı İçin Gıda Alımı"
+    document_type: ihale_ilan_metni
+    administration: "Çekmeköy Belediyesi Sosyal Yardım İşleri Müdürlüğü"
+    ikn: "2025/2351397"
+    procurement_type: mal_alimi
+    procedure: acik_ihale
+    tender_date: "2026-01-22 10:00"
+    official_url: "https://www.cekmekoy.bel.tr/upload/files/2026-yili-asevi-mutfagi-icin-gida-alimi-fbf76256-7dd0-4067-94e0-e51a2a4934ab.pdf"
+    ekap_url: "https://ekap.kik.gov.tr/EKAP/"
+    status: test_adayi
+    notes: "Resmî belediye ilanı; 194 kalem gıda, işletme kayıt belgesi, numune, teslimat ve yeterlik hükümleri içeriyor. Ayrıntılı ihale dokümanı EKAP hesabı üzerinden edinilmeli. V0 kamuya açık test verisi olarak değerlendirilebilir."
+
+  - id: TEST-ASEVI-SISLI-2022-1363211
+    title: "Aşevi Malzemeli Yemek Hazırlama Hizmeti Alımı"
+    document_type: kurul_karari_ve_ihale_referansi
+    administration: "Şişli Belediye Başkanlığı"
+    ikn: "2022/1363211"
+    procurement_type: hizmet_alimi
+    procedure: acik_ihale
+    decision_reference: "2023/UH.II-426"
+    official_url: "https://ekap.kik.gov.tr/EKAP/Vatandas/KurulKararGoster.aspx?KararId=6949e16196e5aee11308adedffc8ea70bd56ab358d86226731752cfab16a602f&KararMetni=98ac23dcef7731f4de847e26fe74663b51a0aac45c860d8bfa48ccf3a948eac1"
+    status: test_adayi
+    notes: "Kamu İhale Kurulu kararında teknik şartname ile örnek menü/gramaj arasında tahin-pekmez düzenlemesi bakımından çelişki tespit edilmiş ve ihale iptal edilmiştir. Bulguların kanıt-mevzuat-öneri üretimi için güçlü negatif test örneğidir."
