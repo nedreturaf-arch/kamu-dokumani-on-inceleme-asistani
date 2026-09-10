@@ -9,6 +9,14 @@ from gemini_provider import analyze_document
 from reporting import report_to_markdown
 
 
+def configured_secret(name: str, default: str = "") -> str:
+    """Read a deployment secret without failing during local development."""
+    try:
+        return str(st.secrets.get(name, os.getenv(name, default)))
+    except Exception:
+        return os.getenv(name, default)
+
+
 st.set_page_config(
     page_title="Kamu Dokümanı Ön İnceleme Asistanı",
     page_icon="🔎",
@@ -48,12 +56,12 @@ with st.sidebar:
     )
     model_name = st.text_input(
         "Gemini model adı",
-        value=os.getenv("GEMINI_MODEL", "gemini-3.7-flash"),
+        value=configured_secret("GEMINI_MODEL", "gemini-3.7-flash"),
         help="Üretimde kurum tarafından onaylanmış model adı kullanılmalıdır.",
     )
     api_key = st.text_input(
         "Geliştirme API anahtarı",
-        value=os.getenv("GEMINI_API_KEY", ""),
+        value=configured_secret("GEMINI_API_KEY"),
         type="password",
         help="Bu alan yalnızca yerel geliştirme içindir. Üretimde anahtar backend üzerinde tutulmalıdır.",
     )

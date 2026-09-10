@@ -8,8 +8,9 @@ Sistem hukuki karar vermeyecek; uzmanların inceleme süresini kısaltacak, risk
 
 ## Başlangıç kapsamı
 
-- Bilişim hizmet alımı teknik şartnameleri
-- Bilişim hizmet alımı sözleşmeleri
+- Sosyal yardım ve sosyal hizmet alımı teknik şartnameleri
+- Sosyal hizmet alımı sözleşmeleri
+- Aşevi, yemek ve kumanya hizmetleri
 - Protokoller
 - 4734 ve 4735 çekirdeği
 - Hizmet alımı mevzuatı
@@ -40,6 +41,19 @@ Sistem hukuki karar vermeyecek; uzmanların inceleme süresini kısaltacak, risk
 - [KT-03 Veri İşleme ve Güvenlik Planı](10_KT03_VERI_ISLEME_VE_GUVENLIK_PLANI.md)
 - [Teknik MVP uygulaması](app.py)
 - [MVP bağımlılıkları](requirements.txt)
+
+## Streamlit üzerinde çalıştırma
+
+1. GitHub deposunu Streamlit Community Cloud'a bağlayın.
+2. Repository olarak `nedreturaf-arch/kamu-dokumani-on-inceleme-asistani`, branch olarak `main`, dosya olarak `app.py` seçin.
+3. Advanced settings içindeki Secrets alanına aşağıdaki bilgileri ekleyin:
+
+```toml
+GEMINI_API_KEY = "buraya-kurum-onayli-gelistirme-anahtari"
+GEMINI_MODEL = "kurum-tarafindan-onaylanmis-model-adi"
+```
+
+Anahtarlar GitHub'a veya bu dosyaya yazılmamalıdır. Gerçek kurum içi ve kişisel veri içeren belgeler, kamuya açık Community Cloud uygulamasında kullanılmamalıdır.
 
 ## Güncelleme kuralı
 
