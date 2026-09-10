@@ -1,0 +1,164 @@
+# İlk kaynak kataloğu.
+# Bu dosya mevzuat metninin kendisi değildir; kaynak ve uygulanabilirlik envanteridir.
+# "dogrulama_bekliyor" durumundaki kayıtlar hukuk/ihale/KVKK uzmanı kontrolünden geçmeden üretim analizinde kullanılmamalıdır.
+
+catalog_version: "0.1"
+institution: "İzmir Büyükşehir Belediyesi"
+pilot_unit: "Sosyal Hizmetler Dairesi Başkanlığı"
+last_reviewed: "2026-09-09"
+
+sources:
+  - id: KIK-4734
+    title: "4734 sayılı Kamu İhale Kanunu"
+    source_type: kanun
+    authority: "Kamu İhale Kurumu"
+    mandatory_level: baglayici
+    applies_when: [kamu_alimi, ihale, dogrudan_temin, istisna_alim]
+    official_url: "https://kik.gov.tr/mevzuat.aspx"
+    status: dogrulama_bekliyor
+
+  - id: KIK-4735
+    title: "4735 sayılı Kamu İhale Sözleşmeleri Kanunu"
+    source_type: kanun
+    authority: "Kamu İhale Kurumu"
+    mandatory_level: baglayici
+    applies_when: [kamu_alimi, sozlesme, sozlesme_yurutme, kabul, fesih]
+    official_url: "https://kik.gov.tr/mevzuat.aspx"
+    status: dogrulama_bekliyor
+
+  - id: KIK-HIZMET-UYGULAMA
+    title: "Hizmet Alımı İhaleleri Uygulama Yönetmeliği"
+    source_type: yonetmelik
+    authority: "Kamu İhale Kurumu"
+    mandatory_level: baglayici
+    applies_when: [hizmet_alimi]
+    official_url: "https://kik.gov.tr/mevzuat.aspx"
+    status: dogrulama_bekliyor
+
+  - id: KIK-GENEL-TEBLIG
+    title: "Kamu İhale Genel Tebliği"
+    source_type: teblig
+    authority: "Kamu İhale Kurumu"
+    mandatory_level: baglayici
+    applies_when: [kamu_alimi, ihale, hizmet_alimi]
+    official_url: "https://kik.gov.tr/mevzuat.aspx"
+    status: dogrulama_bekliyor
+
+  - id: KIK-MUAYENE-KABUL-HIZMET
+    title: "Hizmet Alımları Muayene ve Kabul Yönetmeliği"
+    source_type: yonetmelik
+    authority: "Kamu İhale Kurumu"
+    mandatory_level: baglayici
+    applies_when: [hizmet_alimi, muayene, kabul, teslimat]
+    official_url: "https://kik.gov.tr/mevzuat.aspx"
+    status: dogrulama_bekliyor
+
+  - id: KAMU-5216
+    title: "5216 sayılı Büyükşehir Belediyesi Kanunu"
+    source_type: kanun
+    authority: "Mevzuat"
+    mandatory_level: baglayici
+    applies_when: [buyuksehir_belediyesi, sosyal_hizmet, sosyal_yardim, protokol]
+    official_url: "https://www.mevzuat.gov.tr/"
+    status: dogrulama_bekliyor
+
+  - id: KAMU-5393
+    title: "5393 sayılı Belediye Kanunu"
+    source_type: kanun
+    authority: "Mevzuat"
+    mandatory_level: baglayici
+    applies_when: [belediye, sosyal_hizmet, sosyal_yardim, protokol]
+    official_url: "https://www.mevzuat.gov.tr/"
+    status: dogrulama_bekliyor
+
+  - id: KAMU-5018
+    title: "5018 sayılı Kamu Malî Yönetimi ve Kontrol Kanunu"
+    source_type: kanun
+    authority: "Mevzuat"
+    mandatory_level: baglayici
+    applies_when: [butce, harcama, kamu_alimi, ic_kontrol, performans]
+    official_url: "https://www.mevzuat.gov.tr/"
+    status: dogrulama_bekliyor
+
+  - id: SOS-IZBB-YONETMELIK
+    title: "Sosyal Hizmetler Dairesi Başkanlığı Çalışma Usul ve Esasları Hakkında Yönetmelik"
+    source_type: kurum_duzenlemesi
+    authority: "İzmir Büyükşehir Belediyesi"
+    mandatory_level: kurum_ici_baglayici
+    applies_when: [sosyal_hizmetler_dairesi, sosyal_yardim, sosyal_hizmet]
+    official_url: "https://www.izmir.bel.tr/YuklenenDosyalar/Dokumanlar/3_25062025_040302_.pdf"
+    status: on_kontrol
+
+  - id: SOS-IZBB-SUBE-YONERGELERI
+    title: "Sosyal Hizmetler Dairesi Başkanlığı alt birim yönergeleri"
+    source_type: kurum_duzenlemesi
+    authority: "İzmir Büyükşehir Belediyesi"
+    mandatory_level: kurum_ici_baglayici
+    applies_when: [sosyal_yardim, as_evi, sosyal_tesis, engelli_hizmeti, egitim_destegi, huzurevi]
+    official_url: "https://www.izmir.bel.tr/tr/DokumanBirimler/23/3"
+    status: on_kontrol
+    notes: "Alt birim bazında ayrı kaynak kayıtları oluşturulacak."
+
+  - id: SOS-5378
+    title: "5378 sayılı Engelliler Hakkında Kanun"
+    source_type: kanun
+    authority: "Mevzuat"
+    mandatory_level: baglayici
+    applies_when: [engelli_hizmeti, erisilebilirlik, sosyal_hizmet]
+    official_url: "https://www.mevzuat.gov.tr/"
+    status: dogrulama_bekliyor
+
+  - id: SOS-6284
+    title: "6284 sayılı Ailenin Korunması ve Kadına Karşı Şiddetin Önlenmesine Dair Kanun"
+    source_type: kanun
+    authority: "Mevzuat"
+    mandatory_level: baglayici
+    applies_when: [kadina_yonelik_siddet, kadin_konukevi, sosyal_hizmet]
+    official_url: "https://www.mevzuat.gov.tr/"
+    status: dogrulama_bekliyor
+
+  - id: SOS-2828
+    title: "2828 sayılı Sosyal Hizmetler Kanunu"
+    source_type: kanun
+    authority: "Mevzuat"
+    mandatory_level: baglayici
+    applies_when: [sosyal_hizmet, huzurevi, korunmaya_muhtac_kisi]
+    official_url: "https://www.mevzuat.gov.tr/"
+    status: dogrulama_bekliyor
+
+  - id: SOS-3294
+    title: "3294 sayılı Sosyal Yardımlaşma ve Dayanışmayı Teşvik Kanunu"
+    source_type: kanun
+    authority: "Mevzuat"
+    mandatory_level: kosullu
+    applies_when: [sosyal_yardim, yardim_programi]
+    official_url: "https://www.mevzuat.gov.tr/"
+    status: dogrulama_bekliyor
+
+  - id: KVKK-6698
+    title: "6698 sayılı Kişisel Verilerin Korunması Kanunu"
+    source_type: kanun
+    authority: "Kişisel Verileri Koruma Kurumu"
+    mandatory_level: baglayici
+    applies_when: [kisisel_veri, ozel_nitelikli_veri, sosyal_inceleme, veri_aktarimi]
+    official_url: "https://www.kvkk.gov.tr/Icerik/6649/Personal-Data-Protection-Law"
+    status: dogrulama_bekliyor
+
+  - id: KVKK-IKINCIL
+    title: "KVKK ikincil mevzuatı, Kurul kararları ve rehberleri"
+    source_type: rehber_ve_karar
+    authority: "Kişisel Verileri Koruma Kurumu"
+    mandatory_level: baglayici_ve_yorum
+    applies_when: [kisisel_veri, ozel_nitelikli_veri, veri_guvenligi, saklama_imha, yurt_disi_aktarim]
+    official_url: "https://www.kvkk.gov.tr/Icerik/2030/rehberler"
+    status: on_kontrol
+
+  - id: QUALITY-ISO
+    title: "Sözleşmede açıkça atıf yapılan kalite ve bilgi güvenliği standartları"
+    source_type: standart
+    authority: "Sözleşmede belirtilen kuruluş/standart sahibi"
+    mandatory_level: sozlesmeye_bagli
+    applies_when: [teknik_sartname, bilgi_guvenligi, kalite, hizmet_seviyesi]
+    official_url: null
+    status: kapsam_belirlenecek
+    notes: "ISO 27001, ISO 25010 ve ISO 29148 yalnızca bağlayıcı kaynak veya sözleşme kriteri olarak açıkça belirlenirse uygulanacak."
