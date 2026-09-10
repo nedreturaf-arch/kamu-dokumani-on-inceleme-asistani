@@ -102,6 +102,14 @@
 - Çekmeköy örneği mal alımı niteliğinde olduğundan, ilk MVP'nin hizmet alımı ağırlıklı kapsamı genişletilmeden 4734 ve ilgili Mal Alımı İhaleleri Uygulama Yönetmeliği eşleştirmesi tamamlanamayacak.
 - Sonraki teknik iş olarak KT-04A mevzuat eşleştirme ve kaynak gösterme kilometre taşı planlandı.
 
+## 2026-09-10 — Sosyal hizmetler mevzuat paketlerinin ilk sürümü
+
+- Sosyal hizmetler daireleri için kamu alımı çekirdeği, belediye/kamu yönetimi, sosyal yardım, engelli, çocuk, kadın/şiddet, yaşlı/huzurevi, gıda/aşevi, personel/İSG, çevre/atık, KVKK ve İBB kurum içi paketleri tanımlandı.
+- Paketler her belgeye körlemesine uygulanmayacak; belge türü, alım türü, hizmet konusu ve veri sınıfına göre seçilecek.
+- `legal_packages.py` ile ilk yönlendirme katmanı uygulamaya eklendi. Bu katman kaynak adlarını seçer; mevzuat metni veya madde taraması yapmaz.
+- Gerçek madde düzeyinde analiz için kaynakların güncel metinleri, yürürlük sürümü ve resmî kaynak alıntıları indekslenerek Gemini istemine getirilecek.
+- Ayrıntılı paket yaklaşımı `11_MEVZUAT_PAKETLERI.md` dosyasına, kaynak kayıtları ise `09_KAYNAK_KATALOGU.yaml` dosyasına işlendi.
+
 ## Not alma kuralı
 
 Yeni bir konu konuşulduğunda asistan önce bunun proje kararı, kilometre taşı, kapsam değişikliği veya geçici fikir olup olmadığını ayırt edecek. Kalıcı bir karar veya önemli plan değişikliği ise kullanıcıya “Bunu proje notlarına ekleyeyim mi?” diye sorulacak.

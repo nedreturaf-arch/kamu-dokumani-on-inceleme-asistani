@@ -117,6 +117,231 @@ sources:
     official_url: "https://www.mevzuat.gov.tr/"
     status: dogrulama_bekliyor
 
+  - id: SOS-5395
+    title: "5395 sayılı Çocuk Koruma Kanunu"
+    source_type: kanun
+    authority: "Mevzuat"
+    mandatory_level: kosullu_baglayici
+    applies_when: [cocuk_hizmeti, cocuk_koruma, sosyal_hizmet, sosyal_inceleme]
+    official_url: "https://www.mevzuat.gov.tr/"
+    status: dogrulama_bekliyor
+
+  - id: SOS-6360
+    title: "6360 sayılı On Dört İlde Büyükşehir Belediyesi ve Yirmi Yedi İlçe Kurulması Hakkında Kanun"
+    source_type: kanun
+    authority: "Mevzuat"
+    mandatory_level: kosullu_baglayici
+    applies_when: [buyuksehir_belediyesi, yerel_yetki, sosyal_hizmet]
+    official_url: "https://www.mevzuat.gov.tr/"
+    status: dogrulama_bekliyor
+
+  - id: SOS-HUZUREVI
+    title: "Kamu Kurum ve Kuruluşları Bünyesinde Açılacak Huzurevlerinin Kuruluş ve İşleyiş Esasları Hakkında Yönetmelik"
+    source_type: yonetmelik
+    authority: "Aile ve Sosyal Hizmetler Bakanlığı / Mevzuat"
+    mandatory_level: kosullu_baglayici
+    applies_when: [huzurevi, yasli_hizmeti, bakim_hizmeti]
+    official_url: "https://www.mevzuat.gov.tr/"
+    status: dogrulama_bekliyor
+
+  - id: SOS-KADIN-KONUKEVI
+    title: "Kadın Konukevlerinin Açılması ve İşletilmesi Hakkında Yönetmelik"
+    source_type: yonetmelik
+    authority: "Aile ve Sosyal Hizmetler Bakanlığı / Mevzuat"
+    mandatory_level: kosullu_baglayici
+    applies_when: [kadina_yonelik_siddet, kadin_konukevi, sosyal_hizmet]
+    official_url: "https://www.mevzuat.gov.tr/"
+    status: dogrulama_bekliyor
+
+  - id: SOS-ENGELLI-YONETMELIK
+    title: "Engelli bireylere yönelik erişilebilirlik ve hizmet düzenlemeleri"
+    source_type: ikincil_mevzuat
+    authority: "Mevzuat / Aile ve Sosyal Hizmetler Bakanlığı"
+    mandatory_level: kosullu_baglayici
+    applies_when: [engelli_hizmeti, erisilebilirlik, ozel_gereksinim]
+    official_url: "https://www.mevzuat.gov.tr/"
+    status: dogrulama_bekliyor
+
+  - id: KIK-MAL-UYGULAMA
+    title: "Mal Alımı İhaleleri Uygulama Yönetmeliği"
+    source_type: yonetmelik
+    authority: "Kamu İhale Kurumu"
+    mandatory_level: baglayici
+    applies_when: [mal_alimi, gida_alimi, asevi, teknik_sartname]
+    official_url: "https://kik.gov.tr/mevzuat.aspx"
+    status: dogrulama_bekliyor
+
+  - id: KIK-ELEKTRONIK
+    title: "Kamu Alımlarının Elektronik Ortamda Yapılmasına İlişkin Uygulama Yönetmeliği"
+    source_type: yonetmelik
+    authority: "Kamu İhale Kurumu"
+    mandatory_level: baglayici
+    applies_when: [e_ihale, ekap, elektronik_teklif, kamu_alimi]
+    official_url: "https://kik.gov.tr/mevzuat.aspx"
+    status: dogrulama_bekliyor
+
+  - id: KIK-MAL-KABUL
+    title: "Mal Alımları Denetim Muayene ve Kabul İşlemlerine Dair Yönetmelik"
+    source_type: yonetmelik
+    authority: "Kamu İhale Kurumu"
+    mandatory_level: baglayici
+    applies_when: [mal_alimi, gida_alimi, muayene, kabul, teslimat]
+    official_url: "https://kik.gov.tr/mevzuat.aspx"
+    status: dogrulama_bekliyor
+
+  - id: KIK-TIP-MAL
+    title: "Mal alımlarına ait tip idari şartname ve tip sözleşme düzenlemeleri"
+    source_type: tip_dokuman
+    authority: "Kamu İhale Kurumu"
+    mandatory_level: baglayici_uygulama
+    applies_when: [mal_alimi, ihale, sozlesme, teknik_sartname]
+    official_url: "https://kik.gov.tr/mevzuat.aspx"
+    status: dogrulama_bekliyor
+
+  - id: KIK-TIP-HIZMET
+    title: "Hizmet alımlarına ait tip idari şartname, tip sözleşme ve genel şartname düzenlemeleri"
+    source_type: tip_dokuman
+    authority: "Kamu İhale Kurumu"
+    mandatory_level: baglayici_uygulama
+    applies_when: [hizmet_alimi, ihale, sozlesme, teknik_sartname]
+    official_url: "https://kik.gov.tr/mevzuat.aspx"
+    status: dogrulama_bekliyor
+
+  - id: KAMU-6098
+    title: "6098 sayılı Türk Borçlar Kanunu"
+    source_type: kanun
+    authority: "Mevzuat"
+    mandatory_level: kosullu_baglayici
+    applies_when: [sozlesme, protokol, borc, tazminat, fesih]
+    official_url: "https://www.mevzuat.gov.tr/"
+    status: dogrulama_bekliyor
+
+  - id: KAMU-5070
+    title: "5070 sayılı Elektronik İmza Kanunu"
+    source_type: kanun
+    authority: "Mevzuat"
+    mandatory_level: kosullu_baglayici
+    applies_when: [e_ihale, elektronik_belge, e_imza, ekap]
+    official_url: "https://www.mevzuat.gov.tr/"
+    status: dogrulama_bekliyor
+
+  - id: FOOD-5996
+    title: "5996 sayılı Veteriner Hizmetleri, Bitki Sağlığı, Gıda ve Yem Kanunu"
+    source_type: kanun
+    authority: "Tarım ve Orman Bakanlığı / Mevzuat"
+    mandatory_level: kosullu_baglayici
+    applies_when: [asevi, gida_alimi, yemek_hizmeti, gida_guvenligi]
+    official_url: "https://www.tarimorman.gov.tr/GKGM/Belgeler/DB_Gida/Mevzuat/"
+    status: dogrulama_bekliyor
+
+  - id: FOOD-HIJYEN
+    title: "Gıda Hijyeni Yönetmeliği"
+    source_type: yonetmelik
+    authority: "Tarım ve Orman Bakanlığı / Mevzuat"
+    mandatory_level: kosullu_baglayici
+    applies_when: [asevi, yemek_hizmeti, gida_guvenligi, hijyen, soguk_zincir]
+    official_url: "https://www.tarimorman.gov.tr/GKGM/Belgeler/DB_Gida/Mevzuat/"
+    status: dogrulama_bekliyor
+
+  - id: FOOD-KAYIT-ONAY
+    title: "Gıda İşletmelerinin Kayıt ve Onay İşlemlerine Dair Yönetmelik"
+    source_type: yonetmelik
+    authority: "Tarım ve Orman Bakanlığı"
+    mandatory_level: kosullu_baglayici
+    applies_when: [asevi, gida_isletmesi, isletme_kayit_belgesi, gida_alimi]
+    official_url: "https://www.tarimorman.gov.tr/Konular/Gida-Ve-Yem-Hizmetleri/Gida-Hizmetleri/Kayit-Onay"
+    status: dogrulama_bekliyor
+
+  - id: FOOD-HAYVANSAL-HIJYEN
+    title: "Hayvansal Gıdalar İçin Özel Hijyen Kuralları Yönetmeliği"
+    source_type: yonetmelik
+    authority: "Tarım ve Orman Bakanlığı / Mevzuat"
+    mandatory_level: kosullu_baglayici
+    applies_when: [et_alimi, tavuk_alimi, sut_alimi, hayvansal_gida, asevi]
+    official_url: "https://www.tarimorman.gov.tr/GKGM/Belgeler/DB_Gida/Mevzuat/"
+    status: dogrulama_bekliyor
+
+  - id: FOOD-ETIKETLEME
+    title: "Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği"
+    source_type: yonetmelik
+    authority: "Tarım ve Orman Bakanlığı"
+    mandatory_level: kosullu_baglayici
+    applies_when: [ambalajli_gida, gida_alimi, etiket, urun_tanimi]
+    official_url: "https://www.tarimorman.gov.tr/GKGM/Belgeler/DB_Gida/Mevzuat/"
+    status: dogrulama_bekliyor
+
+  - id: FOOD-MIKROBIYOLOJIK
+    title: "Türk Gıda Kodeksi Mikrobiyolojik Kriterler Yönetmeliği"
+    source_type: yonetmelik
+    authority: "Tarım ve Orman Bakanlığı"
+    mandatory_level: kosullu_baglayici
+    applies_when: [gida_guvenligi, yemek_hizmeti, asevi, numune, laboratuvar]
+    official_url: "https://www.tarimorman.gov.tr/GKGM/Belgeler/DB_Gida/Mevzuat/"
+    status: dogrulama_bekliyor
+
+  - id: ISG-6331
+    title: "6331 sayılı İş Sağlığı ve Güvenliği Kanunu"
+    source_type: kanun
+    authority: "Mevzuat"
+    mandatory_level: kosullu_baglayici
+    applies_when: [mutfak, asevi, tesis, yuklenici_personeli, is_guvenligi]
+    official_url: "https://www.mevzuat.gov.tr/"
+    status: dogrulama_bekliyor
+
+  - id: ISG-4857
+    title: "4857 sayılı İş Kanunu"
+    source_type: kanun
+    authority: "Mevzuat"
+    mandatory_level: kosullu_baglayici
+    applies_when: [hizmet_alimi, yuklenici_personeli, personel, iscilik]
+    official_url: "https://www.mevzuat.gov.tr/"
+    status: dogrulama_bekliyor
+
+  - id: ISG-5510
+    title: "5510 sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu"
+    source_type: kanun
+    authority: "Mevzuat"
+    mandatory_level: kosullu_baglayici
+    applies_when: [hizmet_alimi, yuklenici_personeli, personel, sosyal_guvenlik]
+    official_url: "https://www.mevzuat.gov.tr/"
+    status: dogrulama_bekliyor
+
+  - id: CEVRE-2872
+    title: "2872 sayılı Çevre Kanunu"
+    source_type: kanun
+    authority: "Mevzuat"
+    mandatory_level: kosullu_baglayici
+    applies_when: [asevi, sosyal_tesis, atik, atik_yag, cevre]
+    official_url: "https://www.mevzuat.gov.tr/"
+    status: dogrulama_bekliyor
+
+  - id: CEVRE-ATIK
+    title: "Atık Yönetimi Yönetmeliği ve ilgili atık düzenlemeleri"
+    source_type: yonetmelik
+    authority: "Çevre, Şehircilik ve İklim Değişikliği Bakanlığı / Mevzuat"
+    mandatory_level: kosullu_baglayici
+    applies_when: [asevi, sosyal_tesis, atik, ambalaj, atik_yag]
+    official_url: "https://www.mevzuat.gov.tr/"
+    status: dogrulama_bekliyor
+
+  - id: KVKK-URETGEN-YZ
+    title: "Üretken Yapay Zekâ ve Kişisel Verilerin Korunması Rehberi"
+    source_type: rehber
+    authority: "Kişisel Verileri Koruma Kurumu"
+    mandatory_level: yorum_uygulama
+    applies_when: [kisisel_veri, uretken_yapay_zeka, yapay_zeka, veri_aktarimi]
+    official_url: "https://www.kvkk.gov.tr/Icerik/8547/uretken-yapay-zeka-ve-kisisel-verilerin-korunmasi-rehberi-15-soruda"
+    status: on_kontrol
+
+  - id: KVKK-OZEL-NITELIKLI
+    title: "Özel Nitelikli Kişisel Verilerin İşlenmesine İlişkin Rehber"
+    source_type: rehber
+    authority: "Kişisel Verileri Koruma Kurumu"
+    mandatory_level: yorum_uygulama
+    applies_when: [saglik_verisi, engellilik, cocuk, siddet, ozel_nitelikli_veri]
+    official_url: "https://www.kvkk.gov.tr/Icerik/8184/Ozel-Nitelikli-Kisisel-Verilerin-Islenmesine-Iliskin-Rehber"
+    status: on_kontrol
+
   - id: SOS-2828
     title: "2828 sayılı Sosyal Hizmetler Kanunu"
     source_type: kanun

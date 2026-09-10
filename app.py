@@ -6,6 +6,7 @@ import streamlit as st
 
 from document_parser import parse_document
 from gemini_provider import analyze_document
+from legal_packages import select_legal_packages
 from reporting import report_to_markdown
 
 
@@ -36,6 +37,10 @@ with st.sidebar:
     document_type = st.selectbox(
         "Belge türü",
         ["Teknik şartname", "Sözleşme", "Protokol", "Diğer"],
+    )
+    procurement_kind = st.selectbox(
+        "Alım türü",
+        ["Belirlenmedi", "Mal alımı", "Hizmet alımı", "Yapım işi", "Doğrudan temin"],
     )
     procurement_type = st.selectbox(
         "Alım/hizmet konusu",
@@ -81,6 +86,18 @@ approved_context = st.text_area(
     ),
 )
 
+active_packages = select_legal_packages(
+    procurement_kind=procurement_kind,
+    procurement_type=procurement_type,
+    data_class=data_class,
+)
+with st.expander("Bu seçimlerle etkinleşen mevzuat paketleri", expanded=False):
+    st.caption(
+        "Bunlar yönlendirme bilgileridir. Madde düzeyinde tarama için doğrulanmış kaynak metni ayrıca sisteme bağlanmalıdır."
+    )
+    for package in active_packages:
+        st.write(f"- **{package.title}** — {package.reason}")
+
 if st.button("🔍 Ön İncelemeyi Başlat", type="primary", disabled=uploaded_file is None):
     if not api_key.strip():
         st.error("Geliştirme için Gemini API anahtarı gerekli.")
@@ -101,14 +118,17 @@ if st.button("🔍 Ön İncelemeyi Başlat", type="primary", disabled=uploaded_f
                         model_name=model_name.strip(),
                         document=parsed,
                         document_type=document_type,
+                        procurement_kind=procurement_kind,
                         procurement_type=procurement_type,
                         data_class=data_class,
                         approved_context=approved_context.strip(),
+                        legal_packages=active_packages,
                     )
                 st.session_state["analysis_report"] = report
                 st.session_state["analysis_meta"] = {
                     "filename": uploaded_file.name,
                     "document_type": document_type,
+                    "procurement_kind": procurement_kind,
                     "data_class": data_class,
                     "model": model_name.strip(),
                     "completed_at": datetime.now().isoformat(timespec="seconds"),

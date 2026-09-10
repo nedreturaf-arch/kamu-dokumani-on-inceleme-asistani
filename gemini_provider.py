@@ -4,6 +4,7 @@ from google import genai
 from google.genai import types
 
 from document_parser import ParsedDocument
+from legal_packages import LegalPackage
 from schemas import AnalysisReport
 
 
@@ -27,9 +28,11 @@ def analyze_document(
     model_name: str,
     document: ParsedDocument,
     document_type: str,
+    procurement_kind: str,
     procurement_type: str,
     data_class: str,
     approved_context: str,
+    legal_packages: list[LegalPackage],
 ) -> AnalysisReport:
     client = genai.Client(api_key=api_key)
 
@@ -45,6 +48,11 @@ ONAYLI KAYNAK BAĞLAMI
 {context}
 </approved_context>
 
+ETKİNLEŞEN MEVZUAT PAKETLERİ (YÖNLENDİRME BİLGİSİ)
+{chr(10).join(f"- {package.package_id}: {package.title}" for package in legal_packages)}
+
+Alım türü: {procurement_kind}
+
 BELGE VERİSİ
 <document_data>
 {document.text}
@@ -59,6 +67,7 @@ BELGE VERİSİ
 6. Her bulgu için uygulanabilir bir düzeltme önerisi yaz.
 7. Dokümanda hiç bulunmayan ama bağlama göre kontrol edilmesi gereken konuları ayrı listede belirt; bunları uygunsuzluk bulgusu gibi sunma.
 8. Belge işleme ve kaynak bağlamı sınırlılıklarını ayrıca yaz.
+9. Etkinleşen paket adlarını kaynak metni yerine kullanma; tam metin verilmemişse madde numarası veya hukukî sonuç üretme.
 """
 
     response = client.models.generate_content(

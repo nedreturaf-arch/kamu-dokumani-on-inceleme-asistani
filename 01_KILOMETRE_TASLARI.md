@@ -91,13 +91,16 @@ Mevcut kabul ölçütlerinden "her bulgunun ilgili mevzuat/kriter kaynağını g
 
 ## KT-04A — Mevzuat eşleştirme ve kaynak gösterme
 
-Durum: Planlandı
+Durum: İlk yönlendirme katmanı hazır; kaynak metni indeksleme bekliyor
 
 - Belge türü ve alım türüne göre uygulanabilir mevzuat paketi seçilecek.
 - 4734/4735, ilgili uygulama yönetmeliği, Kamu İhale Genel Tebliği ve belediye/sosyal hizmet kaynakları doğrulanmış metinlerle tutulacak.
 - Her bulgu için kaynak adı, madde/fıkra, kaynak alıntısı, yürürlük/sürüm bilgisi ve belge kanıtı birlikte üretilecek.
 - Kaynak bulunamadığında sistem açıkça "kaynak doğrulaması gerekli" diyecek; madde numarası uydurmayacak.
 - İlk testte Çekmeköy belgesinin mal alımı olması nedeniyle Mal Alımı İhaleleri Uygulama Yönetmeliği de kapsam kontrolüne eklenecek.
+- Belge ve alım türüne göre etkin paketleri seçen yönlendirme katmanı [legal_packages.py](legal_packages.py) dosyasına eklendi.
+- Uygulama arayüzünde seçilen paketler görünür hale getirildi; paket adlarının tek başına mevzuat taraması sayılmayacağı açıkça belirtildi.
+- Ayrıntılı paket tanımları [11_MEVZUAT_PAKETLERI.md](11_MEVZUAT_PAKETLERI.md) dosyasına eklendi.
 
 ## KT-05 — Pilot ve doğrulama
 

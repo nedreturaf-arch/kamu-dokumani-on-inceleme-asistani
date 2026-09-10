@@ -39,6 +39,8 @@ Sistem hukuki karar vermeyecek; uzmanların inceleme süresini kısaltacak, risk
 - [KT-02 Mevzuat Kaynak Envanteri](08_KT02_MEVZUAT_KAYNAK_ENVANTERI.md)
 - [Yapılandırılmış Kaynak Kataloğu](09_KAYNAK_KATALOGU.yaml)
 - [KT-03 Veri İşleme ve Güvenlik Planı](10_KT03_VERI_ISLEME_VE_GUVENLIK_PLANI.md)
+- [Sosyal Hizmetler Mevzuat Paketleri](11_MEVZUAT_PAKETLERI.md)
+- [Mevzuat Paket Yönlendirme Katmanı](legal_packages.py)
 - [Teknik MVP uygulaması](app.py)
 - [MVP bağımlılıkları](requirements.txt)
 

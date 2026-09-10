@@ -7,6 +7,7 @@ def report_to_markdown(report: AnalysisReport, metadata: dict) -> str:
         "",
         f"- Belge: {metadata.get('filename', '')}",
         f"- Belge türü: {metadata.get('document_type', '')}",
+        f"- Alım türü: {metadata.get('procurement_kind', '')}",
         f"- Veri sınıfı: {metadata.get('data_class', '')}",
         f"- Model: {metadata.get('model', '')}",
         f"- Analiz zamanı: {metadata.get('completed_at', '')}",
