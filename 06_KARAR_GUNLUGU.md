@@ -91,6 +91,17 @@
 - Markdown ve JSON rapor indirme eklendi.
 - Uçtan uca API testi için kurum tarafından onaylı geliştirme anahtarı ve örnek belge gerekiyor.
 
+## 2026-09-10 — İlk aşevi teknik şartname testi ve mevzuat eşleştirme açığı
+
+- Çekmeköy Belediyesi 2026 Yılı Aşevi Mutfağı İçin Gıda Alımı teknik şartnamesi, 52 sayfalık PDF olarak V0 kamuya açık test belgesi şeklinde işlendi.
+- Belge türü ve konu seçimi doğruydu: teknik şartname, yemek/aşevi/kumanya ve V0 kamuya açık.
+- İlk rapor beş belge içi bulgu üretti: ürün tanımı çelişkisi, metraj/adet çelişkisi, terim kopyalama ve sipariş iletişim yöntemi belirsizliği.
+- Rapor 5216 veya 4734 sayılı mevzuatı madde düzeyinde taramadı. Bunu raporun sınırlılıklar bölümü de açıkça belirtti.
+- Kök nedenler: onaylı mevzuat/kriter bağlamının boş bırakılması, kaynak kataloğunun henüz analiz akışına bağlı olmaması ve mevzuat metinleri için arama/eşleştirme katmanının bulunmaması.
+- Bu sonuç, KT-04'ün belge içi kalite kontrol kısmının çalıştığını; mevzuat eşleştirme kabul ölçütünün ise henüz karşılanmadığını gösterdi.
+- Çekmeköy örneği mal alımı niteliğinde olduğundan, ilk MVP'nin hizmet alımı ağırlıklı kapsamı genişletilmeden 4734 ve ilgili Mal Alımı İhaleleri Uygulama Yönetmeliği eşleştirmesi tamamlanamayacak.
+- Sonraki teknik iş olarak KT-04A mevzuat eşleştirme ve kaynak gösterme kilometre taşı planlandı.
+
 ## Not alma kuralı
 
 Yeni bir konu konuşulduğunda asistan önce bunun proje kararı, kilometre taşı, kapsam değişikliği veya geçici fikir olup olmadığını ayırt edecek. Kalıcı bir karar veya önemli plan değişikliği ise kullanıcıya “Bunu proje notlarına ekleyeyim mi?” diye sorulacak.

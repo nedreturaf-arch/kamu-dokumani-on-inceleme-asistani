@@ -58,7 +58,7 @@ Durum: Taslak hazır
 
 ## KT-04 — Teknik MVP
 
-Durum: İlk kod iskeleti hazır
+Durum: İlk kod iskeleti hazır; mevzuat eşleştirme katmanı eksik
 
 - PDF/DOCX yükleme
 - Sayfa, bölüm ve tablo konumlarının korunması
@@ -72,6 +72,8 @@ Durum: İlk kod iskeleti hazır
 - EKAP otomatik bağlantısı, SSO ve çoklu model desteği sonraki aşamalara bırakılacak.
 - İlk Streamlit arayüzü ve Gemini sağlayıcı katmanı [app.py](app.py), [gemini_provider.py](gemini_provider.py) ve [document_parser.py](document_parser.py) dosyalarına eklendi.
 - Yapılandırılmış çıktı modelleri [schemas.py](schemas.py) dosyasına eklendi.
+- MVP, kaynak kataloğunu kendiliğinden mevzuat metnine dönüştürmez; onaylı bağlam boş bırakılırsa yalnızca belge içi tutarlılık incelemesi yapar.
+- 5216 ve 4734 gibi mevzuatların madde düzeyinde incelenmesi için doğrulanmış kaynak metni, sürüm bilgisi ve arama/eşleştirme katmanı ayrıca geliştirilmelidir.
 
 ### MVP kabul ölçütleri
 
@@ -82,6 +84,20 @@ Durum: İlk kod iskeleti hazır
 - Her bulgu için uygulanabilir düzeltme önerisi üretilmeli.
 - Çıktı insan tarafından incelenip rapor olarak indirilebilmeli.
 - Belge analiz sonrasında kalıcı olarak saklanmamalı.
+
+### Mevcut MVP'nin sınırı
+
+Mevcut kabul ölçütlerinden "her bulgunun ilgili mevzuat/kriter kaynağını göstermesi" henüz tamamlanmış değildir. Bu ölçüt, mevzuat kaynakları doğrulanıp analiz akışına bağlandıktan sonra yeniden test edilecektir.
+
+## KT-04A — Mevzuat eşleştirme ve kaynak gösterme
+
+Durum: Planlandı
+
+- Belge türü ve alım türüne göre uygulanabilir mevzuat paketi seçilecek.
+- 4734/4735, ilgili uygulama yönetmeliği, Kamu İhale Genel Tebliği ve belediye/sosyal hizmet kaynakları doğrulanmış metinlerle tutulacak.
+- Her bulgu için kaynak adı, madde/fıkra, kaynak alıntısı, yürürlük/sürüm bilgisi ve belge kanıtı birlikte üretilecek.
+- Kaynak bulunamadığında sistem açıkça "kaynak doğrulaması gerekli" diyecek; madde numarası uydurmayacak.
+- İlk testte Çekmeköy belgesinin mal alımı olması nedeniyle Mal Alımı İhaleleri Uygulama Yönetmeliği de kapsam kontrolüne eklenecek.
 
 ## KT-05 — Pilot ve doğrulama
 
