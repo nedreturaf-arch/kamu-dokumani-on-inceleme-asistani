@@ -8,6 +8,9 @@ from legal_packages import LegalPackage
 from schemas import AnalysisReport
 
 
+PROVIDER_REVISION = "kt04a-v2"
+
+
 SYSTEM_INSTRUCTION = """
 Sen kamu alım dokümanları için ön inceleme yapan bir karar destek asistanısın.
 
