@@ -3,3 +3,8 @@ __pycache__/
 .env
 .streamlit/secrets.toml
 tmp/
+
+# Local test documents must not be committed to GitHub.
+*.pdf
+*.doc
+*.docx
